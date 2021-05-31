@@ -4,16 +4,13 @@ import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import footnote from "markdown-it-footnote";
-import Mathjax from "markdown-it-mathjax";
+import katex from "markdown-it-katex";
 import prism from "prismjs";
 import "./prismLanguages";
 import Head from "next/head";
 
 const Post = ({htmlString, data}) => {
-  useEffect(() => {
-    prism.highlightAll()
-
-  }, [])
+  useEffect(() => prism.highlightAll(), [])
 
   return(
     <>
@@ -44,8 +41,7 @@ export const getStaticProps = async ({params: {slug}}) => {
   const markdownWithMetadata = fs.readFileSync(path.join("posts", slug + ".md")).toString();
   const parsedMarkdown = matter(markdownWithMetadata);
   const md = new MarkdownIt();
-  const mathjax = new Mathjax();
-  md.use(mathjax)
+  md.use(katex)
     .use(footnote)
   const htmlString = md.render(parsedMarkdown.content)
 
