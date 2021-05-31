@@ -52,13 +52,13 @@ pre[class*="language-"] {
 	padding: .2em;
 	padding-top: 1px;
 	padding-bottom: 1px;
-	background: #fefefe;
+	background: #eee9de;
 	border: 1px solid #dddddd;
 }
 
 p > code {
-  font-size: 1em;
-  padding: 0.15em;
+  font-size: 0.9em;
+  padding: 0.1em 0.3em 0.1em 0.3em;
 	background: #eee9de;
 }
 
