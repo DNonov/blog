@@ -7,10 +7,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   color: #3d2a14;
-  font-size: 1.15em;
-  text-indent: 1em;
-  word-spacing: 2px;
-  line-height: 33px;
+  font-size: 1em;
+  word-spacing: 0.05em;
+  line-height: 1.7em;
 }
 
 a {
@@ -36,12 +35,7 @@ article {
   background-color: #e3dac9;
 }
 
-h1, h2, h3, h4, h5 {
-  text-indent: 0px;
-}
-
 blockquote {
-  text-indent: 0px;
   font-style: italic;
 }
 
@@ -50,3 +44,71 @@ blockquote {
   border-top: solid 0.01em #3d2a14;
   margin-top: 3em;
 }
+
+/* L tablet */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 18px;
+  }
+  .post {
+    width: 90%;
+  }
+}
+
+/* M tablet */
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 18px;
+  }
+  .post {
+    width: 90%;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 479px) {
+}
+
+
+/* XS devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  .post {
+    width: 90%;
+  }
+}
+
+/* S devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+  .post {
+    width: 90%;
+  }
+}
+
+/* M devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* L devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 21px;
+  }
+  .post {
+    width: 950px;
+  }
+}
+
