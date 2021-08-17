@@ -1,12 +1,19 @@
 ---
 title: Docker
+slug: my-articalei2
+abstract: 'First what is docker volume? Docker volume is part of the host
+OS fs shared with a container. If some part of the project will be
+changed constantly the best solution is to make it a volume.'
+isPublished: true
+publishDate: 10.05.21
+updateDate: 10.05.21
 ---
 
 ## Using docker volumes
 
-First what is docker volume? Docker volume is part of the **host OS'** **fs** shared
-with a container. If some part of the project will be changed constantly the best solution
-is to make it a volume.
+First what is docker volume? Docker volume is part of the **host OS'** **fs**
+shared with a container. If some part of the project will be changed constantly
+the best solution is to make it a volume.
 
 ~~~ Bash
 docker run -v <host-dir>:<container-dir>
@@ -18,10 +25,11 @@ In this specific case of react app it will be:
 docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <image-name>
 ~~~
 
-The first **-v** flag is used just as placeholder of the `/app/node_modules` folder in the
-container. As you can see there is no mapping to the **host OS** it's just volume that can be
-accessed any time while the container is running. Now whenever we change something in
-**/frontend** the change will appear in the container as well because of the second volume.
+The first **-v** flag is used just as placeholder of the `/app/node_modules`
+folder in the container. As you can see there is no mapping to the **host OS**
+it's just volume that can be accessed any time while the container is running.
+Now whenever we change something in **/frontend** the change will appear in the
+container as well because of the second volume.
 
 The another option is to use docker-compose.yml file as follows:
 
@@ -61,7 +69,8 @@ and use the image name that you going to get:
 docker run <image-name> npm run test
 ~~~
 
-There is other way via docker-compose. If you add another service to the **docker-compose.yml**:
+There is other way via docker-compose. If you add another service to the
+**docker-compose.yml**:
 
 ~~~ yml
 version: '3'

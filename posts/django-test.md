@@ -1,6 +1,13 @@
 ---
 title: Django-test
-category: Programing
+slug: django-test
+abstract: 'This is a blog post that demonstrates rendering of a few programming
+languages.
+This is a blog post that demonstrates rendering of a few programming languages.
+This is a blog post that demonstrates rendering of a few programming languages.'
+isPublished: true
+publishDate: 10.05.21
+updateDate: 10.05.21
 ---
 
 ~~~ Python

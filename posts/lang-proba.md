@@ -1,6 +1,13 @@
 ---
 title: Lang Test
-description: Language test plus a bit of math.
+slug: lang-proba
+abstract: 'This is a blog post that demonstrates rendering of a few programming
+languages.
+This is a blog post that demonstrates rendering of a few programming languages.
+This is a blog post that demonstrates rendering of a few programming languages.'
+isPublished: true
+publishDate: 10.05.21
+updateDate: 10.05.21
 ---
 
 ### This is a test
@@ -372,3 +379,74 @@ int main(int argc, char** argv)
   return 0;
 }
 ```
+
+### Functions and class components
+
+The simplest way to define a component is to write a JavaScript function:
+
+``` javascript
+function Welcome(props) {
+  return <H1>Hello, {props.name}</H1>;
+}
+```
+
+This function is a valid React component because it accepts a single "props"
+(which stands for properties) object argument with data and returns a React
+element. We call such components "function components" because they are
+literally JavaScript functions.
+
+You can also use an `ES6 class` to define a component:
+
+``` javascript
+class Welcome extends React.Component {
+  render() {
+    return <H1>Hello, {this.props.name}</H1>;
+  }
+}
+```
+
+The above two components are equivalent from React's point of view.
+
+Functions and Class components both have some additional features that we will
+discuss in the next section.
+
+### Rendering a Component
+
+Previously, we only encounter React elements that represent DOM tags:
+
+``` javascript
+const element = <div />;
+```
+
+However, elements can also represent user-defined components:
+
+``` javascript
+const element = <Welcome name="Sara" />;
+```
+
+When React sees an element representing a user-defined component, it passes JSX
+attributes and children to this component as a single object. We call this
+object "props".
+
+For example, this code renders "Hello, Sara" on the page:
+
+``` javascript
+function Welcome(props) {
+  return <H1>Hello, {props.name}</H1>;
+}
+
+const element = <Welcome name="Sara" />;
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+
+Let's recap what happens in this example:
+
+1. We call `ReactDom.render()` with the `<Welcome  name="Sara" />` element.
+2. React call the `Welcome` component with `{name: 'Sara'}` as the props.
+3. Our `Welcome` component returns a `<H1>Hello, Sara</H1>` element as the
+the result.
+4. React DOM efficiently updates the DOM to match `<H1>Hello, Sara</H1>`.
+

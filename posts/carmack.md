@@ -1,12 +1,14 @@
 ---
 title: In-depth Functional programming in C++
-category: Programing
+slug: carmack
+abstract: 'Probably everyone reading this has heard "functional programming" put
+forth as this has heard "functional programming" put forth as Probably everyone
+reading this has heard "functional programming" put forth as something that is
+supposed to bring benefits to software development, or even'
+isPublished: true
+publishDate: 10.05.21
+updateDate: 10.05.21
 ---
-
-
-[In this reprinted #altdevblogaday in-depth piece, id Software co-founder and
-technical director John Carmack looks at the value in programming in a
-functional style with C++.]
 
 Probably everyone reading this has heard "functional programming" put forth as
 something that is supposed to bring benefits to software development, or even
@@ -47,7 +49,7 @@ doing it, and you retain the power to drop down and apply SIMD intrinsics to
 hand laid out data backed by memory mapped files, or whatever other nitty-gritty
 goodness you find the need for.
 
-# Pure Functions
+## Pure Functions
 
 A pure function only looks at the parameters passed in to it, and all it does is
 return one or more computed values based on the parameters. It has no logical
@@ -120,7 +122,7 @@ convenience factor against the difficulties you will inevitably suffer later.
 Most developers are not very good at predicting the future time integrated
 suffering their changes will result in.
 
-# Purity In Practice
+## Purity In Practice
 
 Not everything can be pure; unless the program is only operating on its own
 source code, at some point you need to interact with the outside world. It can
@@ -181,7 +183,7 @@ pure even if it calls impure functions, as long as the side effects don't escape
 the outer function. Entire programs can be considered pure functional units if
 they only deal with command line parameters instead of random file system state.
 
-# Object Oriented Programming
+## Object Oriented Programming
 
 > "OO makes code understandable by encapsulating moving parts. FP makes code
 > understandable by minimizing moving parts."
@@ -215,7 +217,7 @@ string methods were similarly defined as working on themselves, rather than
 returning a new copy with the operation performed on it – ToLowerCase(),
 StripFileExtension(), etc.
 
-# Performance Implications
+## Performance Implications
 
 In almost all cases, directly mutating blocks of memory is the speed-of-light
 optimal case, and avoiding this is spending some performance. Most of the time
@@ -258,7 +260,7 @@ objects has some deep difficulties in parallel environments. Maybe if all of the
 object just referenced a read only version of the world state, and we copied
 over the updated version at the end of the frame… Hey, wait a minute…
 
-# Action Items
+## Action Items
 
 Survey some non-trivial functions in your codebase and track down every bit of
 external state they can reach, and all possible modifications they can make.
