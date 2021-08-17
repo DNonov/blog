@@ -8,6 +8,7 @@ import katex from "markdown-it-katex";
 import prism from "prismjs";
 import "./prismLanguages";
 import Head from "next/head";
+import BlogPostTitleSection from '../components/BlogPostTitleSection';
 
 const Post = ({htmlString, data}) => {
   useEffect(() => prism.highlightAll(), [])
@@ -18,10 +19,12 @@ const Post = ({htmlString, data}) => {
         <title>{data.title}</title>
         <meta title="description" content={data.description} />
       </Head>
-      <article>
-        <h1>{data.title}</h1>
-        <div className="post" dangerouslySetInnerHTML={{ __html: htmlString }}/>
-      </article>
+      <div className="post-wrapper">
+        <article className="post">
+          <BlogPostTitleSection data={data}/>
+          <div className="post-body" dangerouslySetInnerHTML={{ __html: htmlString }}/>
+        </article>
+      </div>
     </>
   );
 }

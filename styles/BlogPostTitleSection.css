@@ -1,0 +1,23 @@
+.post-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.post-title-section {
+  width: 100%;
+  justify-content: start;
+  margin-bottom: 3em;
+}
+
+.post-title-section .post-title {
+  border-bottom: 2px solid #12302e;
+  padding: 0.5em;
+  margin-bottom: 0em;
+}
+
+.post-metadata {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  font-size: 0.8em;
+}
