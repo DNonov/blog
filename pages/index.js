@@ -1,25 +1,53 @@
 import Link from 'next/link';
+import matter from 'gray-matter';
 import fs from 'fs';
+import path from 'path';
 
-const Home = ({slugs}) => (
-  <ul>
-    {slugs.map(slug =>
-      <li key={slug}>
-        <Link href={slug}><a>{`go to: ${slug}`}</a></Link>
-      </li>
-    )}
-  </ul>
-);
+
+const Home = ({posts}) => {
+  return (
+    <section className="post-catalog-wrapper">
+      <ul className="post-catalog">
+        {posts.map(post =>
+          post.isPublished === true ?
+            <li key={post.title}>
+              <Link href={"/"+post.slug}>
+                <h1 className="post-title">{post.title}</h1>
+              </Link>
+              <p className="post-abstract">{post.abstract}</p>
+            </li>
+          :
+            undefined
+        )}
+      </ul>
+    </section>
+  );
+};
 
 export const getStaticProps = async () => {
-  const posts = fs.readdirSync('posts')
-                  .map(post => post.replace('.md', ''));
+  const allPosts = fs.readdirSync('posts');
 
-  return {
-    props : {
-      slugs: posts
-    }
-  }
+  const extractObjects = ({data:{
+    title,
+    slug,
+    abstract,
+    publishDate,
+    updateDate,
+    isPublished
+  }}) => ({
+    title,
+    slug,
+    abstract,
+    publishDate,
+    updateDate,
+    isPublished
+  });
+
+  const posts = allPosts.map(p => fs.readFileSync(path.join('posts', p)))
+    .map(matter)
+    .map(extractObjects)
+
+  return { props: { posts } }
 };
 
 export default Home;
