@@ -10,7 +10,7 @@ publishDate: 10.05.21
 updateDate: 10.05.21
 ---
 
-## Using docker volumes
+### Using docker volumes
 
 First what is docker volume? Docker volume is part of the **host OS'** **fs**
 shared with a container. If some part of the project will be changed constantly
@@ -56,7 +56,7 @@ docker-compose up
 
 The former way is the one chosen for this app.
 
-## Testing react app
+### Testing react app
 
 The best way is to build an image and run it with **npm run test** command:
 
@@ -98,7 +98,7 @@ services:
 Once any file inside the app changes the **test** service will
 run the tests.
 
-## Multi step build
+### Multi step build
 
 Multi step builds are appropriate if you need to use two or more base images.
 Here is example how you can use node and nginx together:
