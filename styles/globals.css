@@ -38,6 +38,7 @@ blockquote {
 .footnotes {
   font-style: italic;
   font-size: 1em;
+  font-weight: 300;
   border-top: solid 0.01em #3d2a14;
   margin-top: 3em;
 }
