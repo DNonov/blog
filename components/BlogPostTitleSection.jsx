@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function BlogPostTitleSection({data}) {
   return(
     <aside className="post-title-section">
