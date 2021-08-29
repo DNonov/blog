@@ -9,7 +9,7 @@ export default function Navbar() {
           <Link href={"/"}>Posts</Link>
         </li>
         <li className="navbar-menu-item">
-          <Link href={"/about"}>About me</Link>
+          <Link href={"/about"}>About</Link>
         </li>
       </ul>
     </nav>
