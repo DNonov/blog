@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 2em;
+  background-color: #f1f1f1;
+}
+
+.navbar-menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+
+.navbar-menu-item {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+/* S devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .logo {
+    flex: 1;
+    font-size: 1em;
+  }
+}
+
+/* M devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .logo {
+    flex: 5;
+    font-size: 1.5em;
+  }
+}
+
+/* L devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .logo {
+    flex: 5;
+    font-size: 1.5em;
+  }
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .logo {
+    flex: 5;
+    font-size: 1.5em;
+  }
+}
