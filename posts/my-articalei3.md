@@ -1,6 +1,7 @@
 ---
 title: My Forth Review
 slug: my-articalei3
+tags: 'english  math'
 abstract: 'Following is a review of my new favorite mechanical keyboard. Post
 content quality notwithstanding, you can see that only item in common between
 the two articles is the slug, which is functioning here as an identifier.'

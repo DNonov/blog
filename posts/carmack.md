@@ -1,6 +1,7 @@
 ---
 title: In-depth Functional programming in C++
 slug: carmack
+tags: 'math programming testing'
 abstract: 'Probably everyone reading this has heard "functional programming" put
 forth as this has heard "functional programming" put forth as Probably everyone
 reading this has heard "functional programming" put forth as something that is

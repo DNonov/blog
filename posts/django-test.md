@@ -1,6 +1,7 @@
 ---
 title: Django-test
 slug: django-test
+tags: 'python math'
 abstract: 'This is a blog post that demonstrates rendering of a few programming
 languages.
 This is a blog post that demonstrates rendering of a few programming languages.

@@ -1,6 +1,7 @@
 ---
 title: Docker
 slug: my-articalei2
+tags: 'programming math'
 abstract: 'First what is docker volume? Docker volume is part of the host
 OS fs shared with a container. If some part of the project will be
 changed constantly the best solution is to make it a volume.'
