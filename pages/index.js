@@ -31,6 +31,7 @@ export const getStaticProps = async () => {
     title,
     slug,
     abstract,
+    tags,
     publishDate,
     updateDate,
     isPublished
@@ -38,6 +39,7 @@ export const getStaticProps = async () => {
     title,
     slug,
     abstract,
+    tags,
     publishDate,
     updateDate,
     isPublished
