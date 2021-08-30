@@ -3,8 +3,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import mathjax from "markdown-it-mathjax";
 import footnote from "markdown-it-footnote";
-import katex from "markdown-it-katex";
 import prism from "prismjs";
 import "./prismLanguages";
 import Head from "next/head";
@@ -18,6 +18,12 @@ const Post = ({htmlString, data}) => {
       <Head>
         <title>{data.title}</title>
         <meta title="description" content={data.description} />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.css" integrity="sha384-6LkG2wmY8FK9E0vU9OOr8UvLwsaqUg9SETfpq4uTCN1agNe8HRdE9ABlk+fVx6gZ" crossOrigin="anonymous" />
+
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/katex.min.js" integrity="sha384-31El76TwmbHj4rF9DyLsygbq6xoIobG0W+jqXim+a3dU9W53tdH3A/ngRPxOzzaB" crossOrigin="anonymous"></script>
+
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.16/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossOrigin="anonymous"
+        onLoad="renderMathInElement(document.body);"></script>
       </Head>
       <div className="post-wrapper">
         <article className="post">
@@ -44,9 +50,10 @@ export const getStaticProps = async ({params: {slug}}) => {
   const markdownWithMetadata = fs.readFileSync(path.join("posts", slug + ".md")).toString();
   const parsedMarkdown = matter(markdownWithMetadata);
   const md = new MarkdownIt();
-  md.use(katex)
-    .use(footnote)
-  const htmlString = md.render(parsedMarkdown.content)
+  md.use(mathjax())
+    .use(footnote);
+
+  const htmlString = md.render(parsedMarkdown.content);
 
   return {
     props: {
