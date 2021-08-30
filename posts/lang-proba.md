@@ -200,6 +200,14 @@ $$
 \end{pmatrix}
 $$
 
+$$s = ut + \frac{1}{2}at^{2}$$
+
+$M = \left( \begin{array}{cc} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{array} \right)$
+
+$$(f*g)(n) = \sum\limits_{d | n} f(d) \cdot g\left(\frac{n}{d}\right)$$
+
+Three very special numbers: $e{i \pi}$
+
 
 ``` c
 #include <stdio.h>
