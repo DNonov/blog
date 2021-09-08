@@ -1,0 +1,22 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["prismjs", {
+      "languages": [
+        "python",
+        "clojure",
+        "c",
+        "typescript",
+        "git",
+        "diff",
+        "vim",
+        "sql",
+        "jsx",
+        "bash",
+        "yaml",
+        "docker",
+        "haskell"
+      ]
+    }]
+  ]
+}

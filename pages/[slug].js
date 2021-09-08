@@ -6,7 +6,6 @@ import MarkdownIt from "markdown-it";
 import mathjax from "markdown-it-mathjax";
 import footnote from "markdown-it-footnote";
 import prism from "prismjs";
-import "./prismLanguages";
 import Head from "next/head";
 import BlogPostTitleSection from '../components/BlogPostTitleSection';
 
