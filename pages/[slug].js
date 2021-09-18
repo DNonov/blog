@@ -9,7 +9,7 @@ import prism from "prismjs";
 import Head from "next/head";
 import BlogPostTitleSection from '../components/BlogPostTitleSection';
 
-const Post = ({htmlString, data}) => {
+const Post = ({ data }) => {
   useEffect(() => {
     prism.highlightAll();
     renderMathInElement(document.body);
@@ -23,8 +23,8 @@ const Post = ({htmlString, data}) => {
       </Head>
       <div className="post-wrapper">
         <article className="post">
-          <BlogPostTitleSection data={data}/>
-          <div className="post-body" dangerouslySetInnerHTML={{ __html: htmlString }}/>
+          <BlogPostTitleSection data={data} />
+          <div className="post-body" dangerouslySetInnerHTML={{ __html: data.content }}/>
         </article>
       </div>
     </>
@@ -49,13 +49,11 @@ export const getStaticProps = async ({params: {slug}}) => {
   md.use(mathjax())
     .use(footnote);
 
-  const htmlString = md.render(parsedMarkdown.content);
+  const content = md.render(parsedMarkdown.content);
+  const data = {...parsedMarkdown.data, content};
 
   return {
-    props: {
-      htmlString,
-      data: parsedMarkdown.data
-    }
+    props: {data}
   }
 };
 

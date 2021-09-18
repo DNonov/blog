@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import matter from 'gray-matter';
 import fs from 'fs';
 import path from 'path';
+
+import BlogPostTitleSection from '../components/BlogPostTitleSection';
 
 
 const Home = ({posts}) => {
@@ -11,9 +12,7 @@ const Home = ({posts}) => {
         {posts.map(post =>
           post.isPublished === true ?
             <li key={post.title}>
-              <Link href={"/"+post.slug}>
-                <h1 className="post-title">{post.title}</h1>
-              </Link>
+              <BlogPostTitleSection data={post}/>
               <p className="post-abstract">{post.abstract}</p>
             </li>
           :
@@ -35,14 +34,15 @@ export const getStaticProps = async () => {
     publishDate,
     updateDate,
     isPublished
-  }}) => ({
+  }, content}) => ({
     title,
     slug,
     abstract,
     tags,
     publishDate,
     updateDate,
-    isPublished
+    isPublished,
+    content
   });
 
   const posts = allPosts.map(p => fs.readFileSync(path.join('posts', p)))

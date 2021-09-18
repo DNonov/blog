@@ -64,6 +64,10 @@ blockquote {
   padding: 10px;
 }
 
+.post-catalog > li {
+  margin-bottom: 3em;
+}
+
 .post-catalog-wrapper {
   display: flex;
   justify-content: center;
