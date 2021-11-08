@@ -9,10 +9,10 @@ export default function BlogPostTitleSection({data}) {
       </Link>
       <div className="post-metadata">
         <span className="post-publish-date">
-          <b>Published:</b>&nbsp;{data.publishDate} &nbsp; &nbsp;
-          <b>Time:</b>&nbsp;{timeToFinishReading(data.content)} min read
+          <b><i className="bi bi-calendar-date"></i>&nbsp;{data.publishDate} &nbsp; &nbsp;</b>
+          <b><i className="bi bi-stopwatch"></i>&nbsp;{timeToFinishReading(data.content)} min read</b>
         </span>
-        <span className="post-publish-date"><b>Tags:</b>&nbsp;{data.tags}</span>
+          <b><span className="post-publish-date"><i className="bi bi-tags"></i>&nbsp;{data.tags}</span></b>
       </div>
     </aside>
   );
