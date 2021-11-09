@@ -8,13 +8,14 @@
 .navbar-menu {
   display: flex;
   flex: 1;
-  max-width: 140px;
+  max-width: 150px;
   justify-content: space-between;
   padding-inline-start: 0;
 }
 
 .navbar-menu-item {
   display: flex;
+  font-size: 1.3em;
 }
 
 .logo {
@@ -26,8 +27,9 @@
 
 /* XS devices (normal phones, 300px and up) */
 @media only screen and (min-width: 300px) {
-  .logo { font-size: 1em; }
-  .navbar-menu { max-width: 100px; }
+  .logo { font-size: 1.2em; }
+  .navbar-menu { max-width: 110px; }
+  .navbar-menu-item { font-size: 1.1em; }
   .navbar { padding: 0.2em 1.5em; }
 }
 
@@ -40,8 +42,7 @@
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo { font-size: 1.5em; }
-  .navbar-menu { max-width: 140px; }
-
+  .navbar-menu { max-width: 190px; }
 }
 
 /* L devices (laptops/desktops, 992px and up) */

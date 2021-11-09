@@ -91,6 +91,14 @@ blockquote {
   .post {
     width: 90%;
   }
+
+  .post-tags { display: flex; }
+  .post-metadata { flex-direction: column; }
+
+  .post-publish-date {
+    display: flex;
+    margin-bottom: 0.5em;
+  }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
