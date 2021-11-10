@@ -7,7 +7,7 @@ import BlogPostTitleSection from '../components/BlogPostTitleSection';
 
 const Home = ({posts}) => {
   return (
-    <section className="post-catalog-wrapper">
+    <section className="content-wrapper">
       <ul className="post-catalog">
         {posts.map(post =>
           post.isPublished === true ?

@@ -68,7 +68,7 @@ blockquote {
   margin-bottom: 3em;
 }
 
-.post-catalog-wrapper {
+.content-wrapper {
   display: flex;
   justify-content: center;
 }
