@@ -1,8 +1,14 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.2em 3em;
-  background-color: #f1f1f1;
+  border-bottom: 2px solid #d1d1d1;
+}
+
+.navbar-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .navbar-menu {
@@ -31,28 +37,33 @@
   .navbar-menu { max-width: 110px; }
   .navbar-menu-item { font-size: 1.1em; }
   .navbar { padding: 0.2em 1.5em; }
+  .navbar-inner-wrapper { width: 100%; }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .logo { font-size: 1em; }
   .navbar-menu { max-width: 100px; }
+  .navbar-inner-wrapper { width: 100%; }
 }
 
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo { font-size: 1.5em; }
   .navbar-menu { max-width: 190px; }
+  .navbar-inner-wrapper { width: 100%; }
 }
 
 /* L devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .logo { font-size: 1.5em; }
   .navbar-menu { flex: 12; }
+  .navbar-inner-wrapper { width: 100%; }
 }
 
 /* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .logo { font-size: 1.5em; }
   .navbar-menu { flex: 12; }
+  .navbar-inner-wrapper { width: 800px; }
 }
