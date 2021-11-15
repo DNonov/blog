@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 html,
 body {
   background-color: #fefefe;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #12302e;
   font-size: 1em;
   word-spacing: 0.1em;
@@ -75,7 +74,7 @@ blockquote {
 }
 
 .post-title {
-  font-family: 'Blinker', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .post-catalog .post-title {
