@@ -1,5 +1,8 @@
 .navbar {
   padding: 0.2em 3em;
+}
+
+.bottom-border {
   border-bottom: 2px solid #d1d1d1;
 }
 
