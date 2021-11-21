@@ -10,6 +10,12 @@ export default function Navbar() {
           <Link href={"/"}>Posts</Link>
         </li>
         <li className="navbar-menu-item">
+          <Link href={"/tags"}>Tags</Link>
+        </li>
+        <li className="navbar-menu-item">
+          <Link href={"/projects"}>Projects</Link>
+        </li>
+        <li className="navbar-menu-item">
           <Link href={"/about"}>About</Link>
         </li>
       </ul>
