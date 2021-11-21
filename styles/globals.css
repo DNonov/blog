@@ -48,7 +48,6 @@ blockquote {
 .post-wrapper {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
 }
 
 .post {
@@ -91,9 +90,7 @@ blockquote {
 
 /* XS devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  html {
-    font-size: 15px;
-  }
+  html { font-size: 15px; }
   .post-title-section,
   .post-catalog,
   .post {
@@ -107,43 +104,41 @@ blockquote {
     display: flex;
     margin-bottom: 0.5em;
   }
+
+  .content-wrapper { margin: 0px 0px 0px 0px; }
+  .post-wrapper { margin: 30px 0px 30px 0px; }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  html {
-    font-size: 15px;
-  }
-  /* .post-title-section, */
+  html { font-size: 15px; }
   .post-catalog,
-  .post {
-    width: 90%;
-  }
+  .post { width: 90%; }
+  .content-wrapper { margin: 0px 0px 0px 0px; }
+  .post-wrapper { margin: 50px 0px 50px 0px; }
 }
 
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  html {
-    font-size: 20px;
-  }
+  html { font-size: 20px; }
+  .content-wrapper { margin: 50px 0px 50px 0px; }
+  .post-wrapper { margin: 50px 0px 50px 0px; }
 }
 
 /* L devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  html {
-    font-size: 20px;
-  }
+  html { font-size: 20px; }
+  .content-wrapper { margin: 50px 0px 50px 0px; }
+  .post-wrapper { margin: 50px 0px 50px 0px; }
 }
 
 /* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  html {
-    font-size: 21px;
-  }
-  /* .post-title-section, */
+  html { font-size: 21px; }
+  .content-wrapper { margin: 50px 0px 50px 0px; }
+  .post-wrapper { margin: 50px 0px 50px 0px; }
+
   .post-catalog,
-  .post {
-    width: 800px;
-  }
+  .post { width: 800px; }
 }
 
