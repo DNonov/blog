@@ -23,6 +23,8 @@ a {
   box-sizing: border-box;
 }
 
+i { font-style: normal; }
+
 article {
   display: flex;
   justify-content: center;
