@@ -1,6 +1,6 @@
-export default function HorizontalContainer({children, borderPosition}) {
+export default function HorizontalContainer({children, classN}) {
   return(
-    <section className={`hz-container ${borderPosition}`}>
+    <section className={`hz-container ${classN}`}>
       <div className="hz-container-inner-wrapper">
         {children}
       </div>

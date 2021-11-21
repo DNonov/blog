@@ -3,7 +3,7 @@ import HorizontalContainer from './HorizontalContainer';
 
 export default function Navbar() {
   return(
-    <HorizontalContainer borderPosition="bottom-border" >
+    <HorizontalContainer classN="bottom-border" >
       <span className="logo">DNonov</span>
       <ul className="navbar-menu">
         <li className="navbar-menu-item">
