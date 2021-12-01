@@ -12,6 +12,10 @@ body {
   line-height: 1.5em;
 }
 
+ul {
+  padding: 0 0 0 0;
+}
+
 p { color: #112c2a; }
 
 a {
@@ -71,7 +75,7 @@ blockquote {
 }
 
 .post-catalog > li {
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
 }
 
 .content-wrapper {
