@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
 
 html,
 body {
   background-color: #fefefe;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #12302e;
-  font-size: 1em;
+  font-size: 1.15em;
   word-spacing: 0.1em;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 
 p { color: #112c2a; }
@@ -81,7 +81,7 @@ blockquote {
 }
 
 .post-title {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .post-catalog .post-title {
@@ -90,7 +90,7 @@ blockquote {
 
 /* XS devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  html { font-size: 15px; }
+  html { font-size: 1em; }
   .post-title-section,
   .post-catalog,
   .post {
@@ -111,7 +111,6 @@ blockquote {
 
 /* S devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  html { font-size: 15px; }
   .post-catalog,
   .post { width: 90%; }
   .content-wrapper { margin: 0px 0px 0px 0px; }
@@ -120,21 +119,18 @@ blockquote {
 
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  html { font-size: 20px; }
   .content-wrapper { margin: 50px 0px 50px 0px; }
   .post-wrapper { margin: 50px 0px 50px 0px; }
 }
 
 /* L devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  html { font-size: 20px; }
   .content-wrapper { margin: 50px 0px 50px 0px; }
   .post-wrapper { margin: 50px 0px 50px 0px; }
 }
 
 /* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  html { font-size: 21px; }
   .content-wrapper { margin: 50px 0px 50px 0px; }
   .post-wrapper { margin: 50px 0px 50px 0px; }
 
