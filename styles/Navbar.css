@@ -29,7 +29,7 @@
   .logo { font-size: 1.3em; }
   .navbar { padding: 0.2em 1.5em; }
   .navbar-menu { width: 65%; }
-  .navbar-menu-item { font-size: 1em; }
+  .navbar-menu-item { font-size: 0.9em; }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
@@ -41,6 +41,7 @@
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .logo { font-size: 1.5em; }
+  .navbar-menu-item { font-size: 1em; }
 }
 
 /* L devices (laptops/desktops, 992px and up) */
