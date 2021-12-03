@@ -5,7 +5,7 @@
 
 .copyright {
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: #1e1e1e;
 }
 
@@ -22,11 +22,32 @@
 
 .links-list-label {
   font-size: 1.1em;
-  font-style: bold;
+  font-weight: 500;
   margin-bottom: 1em;
 }
 
 .links-item {
-  font-size: 0.9em;
   cursor: pointer;
+}
+
+/* XS devices (normal phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+  .links-item { font-size: 0.8em; }
+}
+
+/* S devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .links-item { font-size: 0.9em; }
+}
+
+/* M devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* L devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
