@@ -6,21 +6,6 @@ export default function Footer() {
     <section className="footer">
       <HorizontalContainer classN="top-border">
         <ul className="links-list">
-          <span className="links-list-label">Links</span>
-          <li className="links-item">
-            <Link href={"/"}>Posts</Link>
-          </li>
-          <li className="links-item">
-            <Link href={"/tags"}>Tags</Link>
-          </li>
-          <li className="links-item">
-            <Link href={"/projects"}>Projects</Link>
-          </li>
-          <li className="links-item">
-            <Link href={"/about"}>About</Link>
-          </li>
-        </ul>
-        <ul className="links-list">
           <span className="links-list-label">Contacts</span>
           <li className="links-item">
             <Link href="https://github.com/DNonov">
@@ -41,6 +26,21 @@ export default function Footer() {
             <Link href="mailto:d.nonov@gmail.com">
               <i className="bi bi-envelope">&nbsp; D.Nonov@gmail.com</i>
             </Link>
+          </li>
+        </ul>
+        <ul className="links-list">
+          <span className="links-list-label">Links</span>
+          <li className="links-item">
+            <Link href={"/"}>Posts</Link>
+          </li>
+          <li className="links-item">
+            <Link href={"/tags"}>Tags</Link>
+          </li>
+          <li className="links-item">
+            <Link href={"/projects"}>Projects</Link>
+          </li>
+          <li className="links-item">
+            <Link href={"/about"}>About</Link>
           </li>
         </ul>
       </HorizontalContainer>
