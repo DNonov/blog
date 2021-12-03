@@ -3,13 +3,14 @@ import fs from 'fs';
 import path from 'path';
 
 import BlogPostTitleSection from '../components/BlogPostTitleSection';
+import sortPostsByDate from '../lib/sortPostsByDate';
 
 
 const Home = ({posts}) => {
   return (
     <section className="content-wrapper">
       <ul className="post-catalog">
-        {posts.map(post =>
+        {sortPostsByDate(posts).map(post =>
           post.isPublished === true ?
             <li key={post.title}>
               <BlogPostTitleSection data={post}/>
