@@ -21,6 +21,7 @@ p { color: #112c2a; }
 a {
   color: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 * {

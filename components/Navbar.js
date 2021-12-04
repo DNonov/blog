@@ -1,7 +1,16 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import HorizontalContainer from './HorizontalContainer';
 
+import scrollToBottomOfPage from '../lib/scrollToBottomOfPage';
+
 export default function Navbar() {
+  useEffect(() => {
+    document
+      .querySelector('.contact')
+      .addEventListener('click', () => scrollToBottomOfPage(window));
+  });
+
   return(
     <HorizontalContainer classN="bottom-border" >
       <span className="logo">DNonov</span>
@@ -13,7 +22,7 @@ export default function Navbar() {
           <Link href={"/tags"}>Tags</Link>
         </li>
         <li className="navbar-menu-item">
-          <Link href={"/projects"}>Projects</Link>
+          <a className="contact">Contact</a>
         </li>
         <li className="navbar-menu-item">
           <Link href={"/about"}>About</Link>

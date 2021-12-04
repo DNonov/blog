@@ -37,7 +37,7 @@ export default function Footer() {
             <Link href={"/tags"}>Tags</Link>
           </li>
           <li className="links-item">
-            <Link href={"/projects"}>Projects</Link>
+            <a className="contact">Contacts</a>
           </li>
           <li className="links-item">
             <Link href={"/about"}>About</Link>
