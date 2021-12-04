@@ -6,7 +6,7 @@ abstract: 'Following is a review of my new favorite mechanical keyboard. Post
 content quality notwithstanding, you can see that only item in common between
 the two articles is the slug, which is functioning here as an identifier.'
 isPublished: true
-publishDate: 10.05.21
+publishDate: 11.05.21
 updateDate: 10.05.21
 ---
 

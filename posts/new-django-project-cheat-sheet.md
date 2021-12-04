@@ -4,7 +4,7 @@ slug: new-django-project-cheat-sheet
 tags: 'django'
 abstract: 'This is the way to get your new django project.'
 isPublished: true
-publishDate: 27.11.2021
+publishDate: 27.11.21
 updateDate: 10.05.21
 ---
 

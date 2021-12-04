@@ -6,7 +6,7 @@ abstract: 'First what is docker volume? Docker volume is part of the host
 OS fs shared with a container. If some part of the project will be
 changed constantly the best solution is to make it a volume.'
 isPublished: true
-publishDate: 10.05.21
+publishDate: 10.10.21
 updateDate: 10.05.21
 ---
 
