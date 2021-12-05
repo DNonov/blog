@@ -26,10 +26,10 @@
 
 /* XS devices (normal phones, 300px and up) */
 @media only screen and (min-width: 300px) {
-  .logo { font-size: 1.3em; }
+  .logo { font-size: 1.1em; }
   .navbar { padding: 0.2em 1.5em; }
   .navbar-menu { width: 65%; }
-  .navbar-menu-item { font-size: 0.9em; }
+  .navbar-menu-item { font-size: 0.8em; }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
