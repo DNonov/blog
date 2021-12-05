@@ -29,3 +29,34 @@
 li > .post-title-section {
   margin-bottom: 2em;
 }
+
+.date-and-read {
+  display: flex;
+}
+
+.post-publish-date {
+  letter-spacing: 0.12em;
+}
+
+/* XS devices (normal phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+  .post-title {
+    font-size: 1.3em;
+  }
+}
+
+/* S devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* M devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* L devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
