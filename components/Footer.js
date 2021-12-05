@@ -3,7 +3,7 @@ import HorizontalContainer from './HorizontalContainer';
 
 export default function Footer() {
   return(
-    <section className="footer">
+    <footer className="footer">
       <HorizontalContainer classN="top-border">
         <ul className="links-list">
           <span className="links-list-label">Contacts</span>
@@ -45,6 +45,6 @@ export default function Footer() {
         </ul>
       </HorizontalContainer>
       <span className="copyright">&copy; 2021 Dimitar Nonov.</span>
-    </section>
+    </footer>
   );
 }
