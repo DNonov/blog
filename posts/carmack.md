@@ -7,7 +7,7 @@ forth as this has heard "functional programming" put forth as Probably everyone
 reading this has heard "functional programming" put forth as something that is
 supposed to bring benefits to software development, or even'
 isPublished: true
-publishDate: 10.06.21
+publishDate: 10.06.2021
 updateDate: 10.05.21
 ---
 
