@@ -1,0 +1,37 @@
+.scroller {
+  display: none;
+  font-size: 3em;
+  color: #12302e;
+  position: fixed;
+  cursor: pointer;
+  z-index: 99;
+  top: 55%;
+  left: 90%;
+
+  border: thin solid #12302e;
+  overflow: hidden;
+  padding: 0.3em;
+  border-radius: 25%;
+}
+
+/* XS devices (normal phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+  .scroller { left: 70%; top: 60%; }
+}
+
+/* S devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .scroller { left: 90%; top: 55%; }
+}
+
+/* M devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* L devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* XL devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
