@@ -4,7 +4,6 @@ import "../styles/BlogPostTitleSection.css";
 import "../styles/Navbar.css";
 import "../styles/HorizontalContainer.css";
 import "../styles/Footer.css";
-import "../styles/Scroller.css";
 import "../components/Layout";
 import Layout from "../components/Layout";
 import Head from "next/head";
