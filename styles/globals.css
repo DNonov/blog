@@ -93,6 +93,10 @@ blockquote {
   cursor: pointer;
 }
 
+.post-abstract {
+  margin-top: 0em;
+}
+
 /* XS devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   html { font-size: 1em; }
