@@ -21,6 +21,7 @@
 }
 
 .links-list-label {
+  display: flex;
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 1em;
