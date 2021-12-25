@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="footer">
       <HorizontalContainer classN="top-border">
         <ul className="links-list">
-          <span className="links-list-label">Contacts</span>
+          <li>
+            <span className="links-list-label">Contacts</span>
+          </li>
           <li className="links-item">
             <Link href="https://github.com/DNonov">
               <i className="bi bi-github">&nbsp; github.com</i>
@@ -29,7 +31,9 @@ export default function Footer() {
           </li>
         </ul>
         <ul className="links-list">
-          <span className="links-list-label">Links</span>
+          <li>
+            <span className="links-list-label">Links</span>
+          </li>
           <li className="links-item">
             <Link href={"/"}>Posts</Link>
           </li>
