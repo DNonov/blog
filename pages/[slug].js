@@ -18,7 +18,7 @@ const Post = ({ data }) => {
   return(
     <>
       <Head>
-        <title>{data.title}</title>
+        <title>Dnonov | {data.title}</title>
         <meta title="description" content={data.description} />
       </Head>
       <div className="post-wrapper">
