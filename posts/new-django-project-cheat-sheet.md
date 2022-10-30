@@ -22,7 +22,7 @@ source ENV_NAME/bin/activate
 pip install django
 
 # Create Django project.
-django-admin startproject helloDjango
+django-admin startproject helloDjango .
 
 # Create a django app.
 django-admin startapp django_app
