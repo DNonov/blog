@@ -1,5 +1,5 @@
 ## Stage one 'Building the blog'
-FROM node:lts AS builder
+FROM node:16 AS builder
 
 COPY ./package*.json ./
 
