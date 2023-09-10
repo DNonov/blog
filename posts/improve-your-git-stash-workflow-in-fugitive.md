@@ -1,6 +1,6 @@
 ---
-title: Enhnace your fugitive stash mappings
-slug: enhance-your-fugitive-stash-mappings
+title: Improve your git stash workflow in fugitive
+slug: improve-your-git-stash-workflow-in-fugitive
 tags: 'nvim git programming'
 abstract: "If you're a vim/neovim user and your git interactions are through vim-fugitive. Here are some good stash related mappings, that I've found useful."
 isPublished: true
