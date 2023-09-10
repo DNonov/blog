@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# local posts that I don't want to share with internet
+/local-posts
