@@ -82,7 +82,7 @@ cleaner `git stash pop 1`.
 
 So we now have all major operations with stashes. How to integrate them in vim?
 
-I've put them as key mappings in `after/plugin/fugative.lua`.
+I've put them as key mappings in `after/plugin/fugitive.lua`.
 
 ``` lua
 vim.keymap.set("n", "<leader>gsl", ':Git log -g stash <CR>');
