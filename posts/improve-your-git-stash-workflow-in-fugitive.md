@@ -94,7 +94,7 @@ This easily can be translated to `vimscript` and used in vim.
 
 ``` vim
 nmap <leader>gsl :Git log -g stash<CR>
-nmap <leader>gs :Gti stash save
+nmap <leader>gs :Git stash save
 nmap <leader>gsp :Git stash pop "stash@{0}"
 ```
 
