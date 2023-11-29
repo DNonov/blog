@@ -43,12 +43,9 @@ export default function Footer() {
           <li className="links-item">
             <a className="contact">Contacts</a>
           </li>
-          <li className="links-item">
-            <Link href={"/about"}>About</Link>
-          </li>
         </ul>
       </HorizontalContainer>
-      <span className="copyright">&copy; 2021 Dimitar Nonov.</span>
+      <span className="copyright">&copy; 2023 Dimitar Nonov.</span>
     </footer>
   );
 }

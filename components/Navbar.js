@@ -24,9 +24,6 @@ export default function Navbar() {
         <li className="navbar-menu-item">
           <a className="contact">Contact</a>
         </li>
-        <li className="navbar-menu-item">
-          <Link href={"/about"}>About</Link>
-        </li>
       </ul>
     </HorizontalContainer>
   );
