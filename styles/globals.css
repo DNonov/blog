@@ -89,8 +89,15 @@ blockquote {
   font-family: 'Montserrat', sans-serif;
 }
 
-.post-catalog .post-title {
+.clickable:hover {
+  color: #820505;
+  font-weight: bold;
+}
+
+.post-catalog .post-title:hover {
   cursor: pointer;
+  color: #820505;
+  font-weight: bold;
 }
 
 .post-abstract {

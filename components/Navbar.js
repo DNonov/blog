@@ -15,13 +15,13 @@ export default function Navbar() {
     <HorizontalContainer classN="bottom-border" >
       <span className="logo">DNonov</span>
       <ul className="navbar-menu">
-        <li className="navbar-menu-item">
+        <li className="navbar-menu-item clickable">
           <Link href={"/"}>Posts</Link>
         </li>
-        <li className="navbar-menu-item">
-          <Link href={"/tags"}>Tags</Link>
+        <li className="navbar-menu-item clickable">
+          <Link href={"/search"}>Search</Link>
         </li>
-        <li className="navbar-menu-item">
+        <li className="navbar-menu-item clickable">
           <a className="contact">Contact</a>
         </li>
       </ul>
