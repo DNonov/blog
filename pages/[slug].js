@@ -12,7 +12,7 @@ import BlogPostTitleSection from '../components/BlogPostTitleSection';
 const Post = ({ data }) => {
   useEffect(() => {
     prism.highlightAll();
-    renderMathInElement(document.body);
+    setTimeout(() => renderMathInElement(document.body), 200);
   });
 
   return(
