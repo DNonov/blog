@@ -57,7 +57,7 @@ you execute this in vim `vim-fugitive` will open a separate buffer. You'll be
 able to check out the stash if press enter on top of the commit. Sure you can
 go back to the buffer with all stashes with `<C-o>`.
 
-Now we need to discuss the part with the popping stashes. If you go for the
+Now we need to discuss the part with popping stashes. If you go for the
 plain `git stash pop`. You're going to pop the last saved stash. 
 
 ``` terminal
