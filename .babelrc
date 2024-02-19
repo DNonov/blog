@@ -4,7 +4,9 @@
     ["prismjs", {
       "languages": [
         "python",
+        "php",
         "clojure",
+        "java",
         "c",
         "typescript",
         "git",
