@@ -13,9 +13,9 @@ body {
   line-height: 1.6em;
 }
 
-ul {
-  padding: 0 0 0 0;
-}
+::selection { background-color: #dfdfdf; }
+
+ul { padding: 0 0 0 0; }
 
 p { color: #112c2a; }
 
@@ -25,9 +25,7 @@ a {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 i { font-style: normal; }
 
@@ -38,10 +36,9 @@ article {
   align-items: center;
 }
 
-
-blockquote {
-  font-style: italic;
 }
+
+blockquote { font-style: italic; }
 
 .footnotes {
   /* font-style: italic; */

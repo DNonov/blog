@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   font-size: 1em;
+  font-weight: 400;
 }
 
 /* XS devices (normal phones, 300px and up) */

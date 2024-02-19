@@ -1,4 +1,3 @@
-
 .post-title-section {
   width: 100%;
   justify-content: start;
@@ -8,13 +7,16 @@
 .post-title-section .post-title {
   padding: 0.5em 0.5em 0.5em 0em;
   margin-bottom: 0em;
+  font-size: 1.5em;
 }
 
 .post-metadata {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0.5em 0em 0.5em 0em;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 1.1em;
 }
 
 .post-tags {
@@ -32,10 +34,6 @@ li > .post-title-section {
 
 .date-and-read {
   display: flex;
-}
-
-.post-publish-date {
-  letter-spacing: 0.12em;
 }
 
 /* XS devices (normal phones, 300px and up) */
