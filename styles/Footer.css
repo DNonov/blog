@@ -27,9 +27,7 @@
   margin-bottom: 1em;
 }
 
-.links-item {
-  cursor: pointer;
-}
+.links-item { cursor: pointer; }
 
 /* XS devices (normal phones, 300px and up) */
 @media only screen and (min-width: 300px) {
