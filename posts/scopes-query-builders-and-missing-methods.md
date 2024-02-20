@@ -3,7 +3,7 @@ title: Scopes, query builders and missing methods
 slug: scopes-query-builders-and-missing-methods
 tags: 'PHP Laravel programming'
 abstract: "How to get your custom query builder or scope methods to model's autocomplete."
-isPublished: false
+isPublished: true
 publishDate: 21.02.2024
 updateDate: 21.02.2024
 ---
