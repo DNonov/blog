@@ -10,24 +10,24 @@ export default function Footer() {
             <span className="links-list-label">Contacts</span>
           </li>
           <li className="links-item clickable">
-            <Link href="https://github.com/DNonov">
+            <a href="https://github.com/DNonov" target="_blank">
               <i className="bi bi-github">&nbsp; github.com</i>
-            </Link>
+            </a>
           </li>
           <li className="links-item clickable">
-            <Link href="https://www.goodreads.com/user/show/93703550-dimitar-nonov">
+            <a href="https://www.goodreads.com/user/show/93703550-dimitar-nonov" target="_blank">
               <i className="bi bi-book">&nbsp; goodreads.com</i>
-            </Link>
+            </a>
           </li>
           <li className="links-item clickable">
-            <Link href="https://twitter.com/dimitar_nonov">
+            <a href="https://twitter.com/dimitar_nonov" target="_blank">
               <i className="bi bi-twitter">&nbsp; twitter.com</i>
-            </Link>
+            </a>
           </li>
           <li className="links-item clickable">
-            <Link href="mailto:d.nonov@gmail.com">
+            <a href="mailto:d.nonov@gmail.com" target="_blank">
               <i className="bi bi-envelope">&nbsp; D.Nonov@gmail.com</i>
-            </Link>
+            </a>
           </li>
         </ul>
         <ul className="links-list">
