@@ -68,8 +68,10 @@ li > code {
 .token.comment,
 .token.prolog,
 .token.doctype,
+.token.shebang.important,
 .token.cdata {
 	color: #858585;
+    font-weight: 300;
 }
 
 .token.namespace {
