@@ -65,6 +65,11 @@ li > code {
   font-family: "Roboto Mono", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
 }
 
+.token.file-descriptor.important {
+	color: #393A34;
+    font-weight: 300;
+}
+
 .token.comment,
 .token.prolog,
 .token.doctype,
