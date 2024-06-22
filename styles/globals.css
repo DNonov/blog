@@ -52,6 +52,10 @@ blockquote { font-style: italic; }
   margin-top: 2em;
 }
 
+.footnote-item > p {
+  margin: 0;
+}
+
 .post-wrapper {
   display: flex;
   justify-content: center;

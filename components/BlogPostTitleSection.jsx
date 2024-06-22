@@ -16,7 +16,7 @@ export default function BlogPostTitleSection({data}) {
             <i className="bi bi-stopwatch"></i>&nbsp;{timeToFinishReading(data.content)} min read
           </span>
         </span>
-          <span className="post-tags"><i className="bi bi-tags"></i>&nbsp;{data.tags}</span>
+        <span className="post-tags"><i className="bi bi-tags"></i>&nbsp;{data.tags}</span>
       </div>
     </aside>
   );
