@@ -95,7 +95,7 @@ get_all_unreachable \
 exit 0;
 ```
 
-It's handy to have an alias in our `.gitconfig` file.
+It's handy to have an alias in the `.gitconfig` file.
 
 ```bash
 [alias]
