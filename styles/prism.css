@@ -5,7 +5,7 @@ pre[class*="language-"] {
 	color: #393A34;
 	font-family: "Roboto Mono", "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
     font-size: 0.8em;
-	direction: ltr;
+    direction: ltr;
 	text-align: left;
 	white-space: pre;
 	word-break: normal;
@@ -41,7 +41,7 @@ pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
 	overflow: auto;
-  text-indent: 0px;
+    text-indent: 0px;
 	border: 1px solid #bbbbbb;
 	background-color: #f5f5f5;
 }

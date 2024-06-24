@@ -3,7 +3,7 @@ title: Create a new Django project cheat sheet
 slug: new-django-project-cheat-sheet
 tags: 'python django programming'
 abstract: 'For some weird reason, I always have to Google this stuff. So this will be my cheat sheet.'
-isPublished: true
+isPublished: false
 publishDate: 10.09.2023
 updateDate: 10.09.2023
 ---
