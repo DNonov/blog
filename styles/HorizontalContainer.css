@@ -17,19 +17,19 @@
 
 /* XS devices (normal phones, 300px and up) */
 @media only screen and (min-width: 300px) {
-  .hz-container { padding: 0.2em 2em; }
+  .hz-container { padding: 0.2em 1.5em; }
   .hz-container-inner-wrapper { width: 100%; }
 }
 
 /* S devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .hz-container { padding: 0.2em 3em; }
+  .hz-container { padding: 0.2em 2.5em; }
   .hz-container-inner-wrapper { width: 100%; }
 }
 
 /* M devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .hz-container { padding: 0.2em 5em; }
+  .hz-container { padding: 0.2em 2.5em; }
   .hz-container-inner-wrapper { width: 100%; }
 }
 
@@ -40,5 +40,5 @@
 
 /* XL devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .hz-container-inner-wrapper { width: 800px; }
+  .hz-container-inner-wrapper { width: 930px; }
 }

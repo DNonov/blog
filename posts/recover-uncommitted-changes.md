@@ -33,9 +33,9 @@ Then check the content of a blob.
 git show a65c803815a7ef4d7094507d7f290702dd9b728a
 ```
 
-If we try this on a repository with long history. Chances are we're going to get
-many blobs. So, we won't be able to get the one we need. We can create
-a short bash script to help.
+If we try this on a repository with long history. Chances are we're going to
+get way too many blobs. So, we won't be able to get the one we need. We can
+create a short bash script to help.
 
 
 ```bash
