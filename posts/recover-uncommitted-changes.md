@@ -56,15 +56,17 @@ set -o pipefail
 has_git_on_system=$(git --version > /dev/null 2>&1 && echo $?);
 within_git_repository=$(git rev-parse --is-inside-work-tree 2> /dev/null);
 
+fail () {
+    echo "FAIL:" $* >&2;
+    exit 1;
+}
 
 if [[ $has_git_on_system != "0" ]]; then
-    echo "Cannot access git!" >&2;
-    exit 1;
+    fail "Cannot access git!"
 fi
 
 if [[ ! $within_git_repository ]]; then
-    echo "This is not a git repository!" >&2;
-    exit 1;
+    fail "This is not a git repository!"
 fi
 
 
