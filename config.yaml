@@ -1,0 +1,65 @@
+baseURL: "https://dnonov.com/"
+languageCode: "en-us"
+title: "DNonov"
+theme: "PaperMod"
+paginate: 5
+
+markup:
+  highlight:
+    guessSyntax: true
+    style: nord
+
+params:
+  env: production
+  math: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  DisableThemeToggle: true
+  DefaultTheme: dark
+  DateFormat: "02 Jan 2006"
+
+  homeInfoParams:
+    title: ""
+
+  assets:
+    disableHLJS: true
+    favicon: "/assets/favicon.ico"
+    favicon16x16: "/assets/favicon-16x16.png"
+    favicon32x32: "/assets/favicon-32x32.png"
+    apple_touch_icon: "/assets/apple-touch-icon.png"
+    safari_pinned_tab: "/assets/safari-pinned-tab.svg"
+
+  socialIcons:
+  - name: "github"
+    url: "https://github.com/dnonov"
+  - name: "goodreads"
+    url: "https://www.goodreads.com/user/show/93703550-dimitar-nonov"
+  - name: "twitter"
+    url: "https://twitter.com/dimitar_nonov"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
