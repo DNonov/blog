@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Monserat:wght@100;300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
-
 main.main {
     position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
@@ -8,7 +5,7 @@ main.main {
     margin: auto;
     padding: var(--gap);
     padding-bottom: 0px;
-    font-family: 'Monserat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.20em;
     letter-spacing: 0.008em;
@@ -24,15 +21,6 @@ div.post-content>div.highlight {
 
 .post-title.entry-hint-parent {
     margin-bottom: 10px;
-}
-
-.post-content {
-    font-family: 'Monserat', sans-serif;
-    font-weight: 300;
-    font-size: 1.1em;
-    letter-spacing: 0.02em;
-    word-spacing: 0.1em;
-    line-height: 1.4em;
 }
 
 header.post-header {
@@ -54,6 +42,10 @@ div.breadcrumbs>a {
 
 ol>li>p, ::marker {
     font-size: 0.7em;
+}
+
+blockquote > p, .post-content > p, .post-content > ul {
+    margin-bottom: 3rem !important;
 }
 
 /* Post link */
@@ -109,13 +101,24 @@ div.post-footer {
 .post-content pre code {
     color: #93A1A1;
     /* background: #002B36 !important; */
-    font-family: 'Fira Mono', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     font-weight: 300;
     font-size: 0.73em;
+}
 
-    letter-spacing: 0.06em;
-    word-spacing: -0.1em;
-    line-height: 1.5em;
+/* Pagination */
+nav > a.prev, nav > a.next {
+    background-color: #2E2E34;
+    color: #DADADB;
+}
+
+.post-content {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: 0.04em;
+    word-spacing: 0.1em;
+    line-height: 1.4em;
 }
 
 /* Mobile */
@@ -124,7 +127,7 @@ div.post-footer {
 @media only screen and (min-width: 300px) {
     main.main {
         width: 100% !important;
-        font-family: 'Monserat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 0.8em;
         letter-spacing: 0.008em;
@@ -144,18 +147,13 @@ div.post-footer {
 
     .post-title.entry-hint-parent {
         margin-bottom: 40px;
+        font-size: 2em;
     }
 }
 /* S devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     main.main {
         width: 100% !important;
-        font-family: 'Monserat', sans-serif;
-        font-weight: 400;
-        font-size: 1.2em;
-        letter-spacing: 0.008em;
-        word-spacing: 0.1em;
-        line-height: 1.4em;
         padding-left: 40px;
         padding-right: 40px;
     }
@@ -184,12 +182,6 @@ div.post-footer {
         margin: auto;
         padding: var(--gap);
         padding-bottom: 0px;
-        font-family: 'Monserat', sans-serif;
-        font-weight: 400;
-        font-size: 1.20em;
-        letter-spacing: 0.008em;
-        word-spacing: 0.1em;
-        line-height: 1.4em;
     }
 
     nav.nav {
@@ -217,12 +209,6 @@ div.post-footer {
         margin: auto;
         padding: var(--gap);
         padding-bottom: 0px;
-        font-family: 'Monserat', sans-serif;
-        font-weight: 400;
-        font-size: 1.20em;
-        letter-spacing: 0.008em;
-        word-spacing: 0.1em;
-        line-height: 1.4em;
     }
 
     nav.nav {
@@ -250,7 +236,7 @@ div.post-footer {
         margin: auto;
         padding: var(--gap);
         padding-bottom: 0px;
-        font-family: 'Monserat', sans-serif;
+        font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 1.20em;
         letter-spacing: 0.008em;

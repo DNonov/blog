@@ -7,12 +7,12 @@ paginate: 5
 markup:
   highlight:
     guessSyntax: true
-    style: nord
+    style: monokai
 
 params:
   env: production
   math: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowReadingTime: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
@@ -24,7 +24,7 @@ params:
     title: ""
 
   assets:
-    disableHLJS: true
+    disableHLJS: false
     favicon: "/assets/favicon.ico"
     favicon16x16: "/assets/favicon-16x16.png"
     favicon32x32: "/assets/favicon-32x32.png"
