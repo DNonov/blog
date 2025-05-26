@@ -5,11 +5,9 @@ main.main {
     margin: auto;
     padding: var(--gap);
     padding-bottom: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
     font-size: 1.20em;
-    letter-spacing: 0.008em;
-    word-spacing: 0.1em;
     line-height: 1.4em;
 }
 
@@ -101,9 +99,12 @@ div.post-footer {
 .post-content pre code {
     color: #93A1A1;
     /* background: #002B36 !important; */
-    font-family: 'Roboto Mono', sans-serif;
-    font-weight: 300;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
     font-size: 0.73em;
+    letter-spacing: 0.04em;
+    word-spacing: 0.000025em;
+    line-height: 1.5em;
 }
 
 /* Pagination */
@@ -113,12 +114,11 @@ nav > a.prev, nav > a.next {
 }
 
 .post-content {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
     font-size: 1.1em;
-    letter-spacing: 0.04em;
-    word-spacing: 0.1em;
     line-height: 1.4em;
+    word-spacing: -0.05em;
 }
 
 /* Mobile */
@@ -127,7 +127,7 @@ nav > a.prev, nav > a.next {
 @media only screen and (min-width: 300px) {
     main.main {
         width: 100% !important;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inconsolata', sans-serif;
         font-weight: 400;
         font-size: 0.8em;
         letter-spacing: 0.008em;
@@ -236,11 +236,11 @@ nav > a.prev, nav > a.next {
         margin: auto;
         padding: var(--gap);
         padding-bottom: 0px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: 200;
         font-size: 1.20em;
-        letter-spacing: 0.008em;
-        word-spacing: 0.1em;
+        letter-spacing: auto;
+        word-spacing: auto;
         line-height: 1.4em;
     }
 

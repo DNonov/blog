@@ -7,7 +7,7 @@ paginate: 5
 markup:
   highlight:
     guessSyntax: true
-    style: monokai
+    style: gruvbox
 
 params:
   env: production
