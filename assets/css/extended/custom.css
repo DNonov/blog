@@ -19,6 +19,7 @@ div.post-content>div.highlight {
 
 .post-title.entry-hint-parent {
     margin-bottom: 10px;
+    word-spacing: -0.05em;
 }
 
 header.post-header {
@@ -26,7 +27,9 @@ header.post-header {
 }
 
 div.post-meta {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    word-spacing: -0.05em;
 }
 
 .post-tags {
@@ -78,6 +81,11 @@ ul#menu>li>a {
     font-weight: 300;
 }
 
+ul.post-tags>li>a {
+    font-size: 1em;
+    font-weight: 300;
+}
+
 div.social-icons {
     margin-bottom: 0px;
     margin-top: 50px;
@@ -93,6 +101,11 @@ div.post-footer {
     display: flex;
     justify-content: center;
     align-items: start;
+}
+
+p > code {
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 300;
 }
 
 /* Highlight */
