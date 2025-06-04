@@ -314,8 +314,8 @@ nav > a.prev, nav > a.next {
         padding-bottom: 0px;
     }
     .post-content {
-        font-size: 1.6rem;
-        line-height: 2.2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
         /* word-spacing: -0.05rem; */
         color: #999;
     }
@@ -324,8 +324,8 @@ nav > a.prev, nav > a.next {
         color: #BBB;
     }
     .post-content pre code {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
     }
     div.post-meta {
         font-size: 1.6rem;
