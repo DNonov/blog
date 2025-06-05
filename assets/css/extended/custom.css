@@ -149,7 +149,7 @@ div.post-footer {
 
 p > code {
     font-family: 'Inconsolata', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     color: #999;
 }
 
@@ -158,7 +158,7 @@ p > code {
     color: #93A1A1;
     /* background: #002B36 !important; */
     font-family: 'Inconsolata', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 0.8rem;
     letter-spacing: 0.04rem;
     word-spacing: 0.000025rem;
@@ -177,7 +177,7 @@ nav > a.prev, nav > a.next {
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.4rem;
-    /* word-spacing: -0.05rem; */
+    word-spacing: -0.05rem;
     color: #999;
 }
 
