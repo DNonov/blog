@@ -9,7 +9,7 @@ main.main {
 }
 
 header.page-header > h1 {
-    color: #BBB;
+    color: #555;
 }
 
 /* Post */
@@ -22,23 +22,23 @@ div.post-content>div.highlight {
     font-size: 2.5rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.1rem;
-    color: #BBB;
+    color: #555;
 }
 
 header.post-header {
     margin-bottom: 80px
 }
 header.entry-header {
-    color: #BBB;
+    color: #555;
 }
 ul.terms-tags > li > a {
-    color: #BBB;
+    color: #555;
 }
 a.archive-header-link {
-    color: #BBB !important;
+    color: #555 !important;
 }
 h3.archive-entry-title {
-    color: #BBB !important;
+    color: #555 !important;
     font-size: 1.6rem;
 }
 .archive-meta {
@@ -64,7 +64,7 @@ blockquote > p, .post-content > p, .post-content > ul {
 }
 
 .post-content blockquote {
-    color: gray;
+    color: #000;
     border-inline-start: 3px solid rgb(95 95 95);
 }
 
@@ -89,14 +89,14 @@ header.entry-header>h2 {
     font-size: 1.8rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
-    color: #BBB;
+    color: #555;
 }
 
 /* Navbar */
 
 div.logo > a {
     font-size: 3em;
-    color: #BBB;
+    color: #555;
 }
 
 nav.nav {
@@ -106,7 +106,7 @@ nav.nav {
 ul#menu>li>a {
     font-size: 2rem;
     font-weight: 300;
-    color: #BBB;
+    color: #555;
 }
 
 ul.post-tags>li>a {
@@ -134,49 +134,50 @@ a.footnote-ref {
 
 div.footnotes > ol > li > p > a {
     font-size: 1.3rem;
-    color: #999;
+    color: #555;
 }
 
 
 span.katex-html {
     font-size: 1.6rem;
-    color: gray;
+    color: #000;
 }
 
 p > code {
     /* font-family: 'Inconsolata', sans-serif; */
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #999;
+    color: #555;
 }
 
 /* Highlight */
 .post-content pre code {
-    color: #93A1A1;
+    color: #555;
+    background-color: #eee !important;
     font-family: 'Inconsolata', sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.3rem;
-    letter-spacing: 0.04rem;
+    /* letter-spacing: 0.04rem; */
     word-spacing: 0.000025rem;
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 /* Pagination */
 nav > a.prev, nav > a.next {
-    background-color: #2E2E34;
-    color: #DADADB;
+    background-color: #fff;
+    color: #2E2E34;
     font-size: 1.2rem;
 }
 
 .post-content {
     /* font-family: 'Inconsolata', sans-serif; */
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
+    color: #555;
+    font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.4rem;
     letter-spacing: 0.03rem;
     word-spacing: 0.25rem;
-    color: #999;
 }
 
 ul.post-tags > li > a {

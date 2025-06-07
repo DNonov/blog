@@ -7,7 +7,7 @@ paginate: 5
 markup:
   highlight:
     guessSyntax: true
-    style: monokai
+    style: modus-operandi
 
 params:
   env: production
@@ -17,7 +17,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   DisableThemeToggle: true
-  DefaultTheme: dark
+  DefaultTheme: light
   DateFormat: "02 Jan 2006"
 
   homeInfoParams:
