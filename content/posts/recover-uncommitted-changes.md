@@ -44,7 +44,7 @@ Bear in mind we have to put the scrip in our `PATH`. So, we can execute it
 from everywhere.
 
 ``` bash
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -o errexit
 set -o nounset
