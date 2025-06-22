@@ -46,52 +46,44 @@ from everywhere.
 ``` bash
 #!/usr/bin/env bash
 
-set -o errexit
-set -o nounset
-set -o pipefail
-
-has_git_on_system=$(git --version > /dev/null 2>&1 && echo $?);
-within_git_repository=$(git rev-parse --is-inside-work-tree 2> /dev/null);
+set -euo pipefail
 
 function fail () {
-    echo "FAIL:" $* >&2;
-    exit 1;
+    echo "FAIL: $*" >&2
+    exit 1
 }
 
-if [[ $has_git_on_system != "0" ]]; then
-    fail "Cannot access git!"
+if ! command -v git > /dev/null 2>&1; then
+    fail "Git is not installed or not available in PATH."
 fi
 
-if [[ ! $within_git_repository ]]; then
+if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
     fail "This is not a git repository!"
 fi
 
-
 function get_all_unreachable() {
-    git fsck --full --no-reflogs --unreachable --lost-found 2> /dev/null;
+    git fsck --full --no-reflogs --unreachable --lost-found 2> /dev/null
 }
 
 function get_only_blobs() {
-    grep blob;
+    grep blob
 }
 
 function get_hash_values() {
-    cut -d\  -f3;
+    cut -d\  -f3
 }
 
 function print_changes() {
-    while read change; 
-        do printf "blob: $change\n"; git cat-file -p $change;
-        printf "\n----------------------------------------------------------\n";
+    while read change
+        do printf "blob: $change\n"; git cat-file -p $change
+        printf "\n----------------------------------------------------------\n"
     done
 }
 
 get_all_unreachable \
     | get_only_blobs \
     | get_hash_values \
-    | print_diffs > recovered_changes.txt;
-
-exit 0;
+    | print_diffs > recovered_changes.txt
 ```
 
 It's handy to have an alias in the `.gitconfig` file.
