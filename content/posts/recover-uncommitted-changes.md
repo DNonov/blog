@@ -40,8 +40,8 @@ touch /usr/local/bin/recover_changes
 chmod +x /usr/local/bin/recover_changes
 ```
 
-Bear in mind we have to put the scrip in our `PATH`. So, we can execute it
-from everywhere.
+Bear in mind we have to put the scrip in our `PATH` so it can be accessed, from
+anywhere.
 
 ``` bash
 #!/usr/bin/env bash
@@ -93,8 +93,8 @@ It's handy to have an alias in the `.gitconfig` file.
   recover-ch = "!bash ~/bin/recover_changes"
 ```
 
-So we can execute the script and create a file `recovered_changes.txt`, which
-contains all the changes, separated by dashed lines.
+We can execute the script and create a file `recovered_changes.txt`, which
+contains all the changes, separated by dashed lines with a single command.
 
 ```bash
 git recover-ch
