@@ -1,6 +1,6 @@
 ---
 title: "Scopes, query builders and missing methods"
-draft: false
+draft: true
 date: 2024-02-21
 tags: ["Programming", "PHP", "Laravel", "Design Patterns"]
 ---
