@@ -2,7 +2,7 @@
 title: "Power law in codebases"
 date: 2025-06-23
 draft: false
-tags: ["Programming", "Statistics", "Bash", "Git", "Mathematics"]
+tags: ["Programming", "Statistics", "Bash", "Git"]
 ---
 
 There's an interesting pattern that can be found in most codebases. The number of
