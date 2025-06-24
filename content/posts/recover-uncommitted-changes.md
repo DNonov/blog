@@ -2,7 +2,7 @@
 title: "Recover uncommitted changes"
 draft: false
 date: 2024-06-19
-tags: ["Git", "Terminal", "Bash", "Programming"]
+tags: ["Git", "Bash", "Programming"]
 ---
 
 Deleting an uncommitted file is a rare yet painful event. Especially if we have

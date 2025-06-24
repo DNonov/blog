@@ -2,7 +2,7 @@
 title: "Improve your git stash workflow in fugitive"
 date: 2023-09-11
 draft: false
-tags: ["Git", "Terminal", "Vim", "Programming"]
+tags: ["Git", "Vim", "Programming"]
 ---
 
 If you're a vim/neovim user and your git interactions are through
