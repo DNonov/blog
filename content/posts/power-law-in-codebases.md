@@ -52,14 +52,14 @@ For a better visual experience, get the top 50 files and pipe them into a pager
 like `less`.
 
 ``` bash
-./changes-frequency-script.sh | head -n 50 | less
+./changes.sh | head -n 50 | less
 ```
 
 or save all the data into a `CSV` file for further analysis (e.g. plotting, report
 generating, spreadsheet analysis) 
 
 ``` bash
-./changes-frequency-script.sh | head -n 50 | awk '{print $2 "," $1 }' >> changes_frequency_file.csv
+./changes.sh | head -n 50 | awk '{print $2 "," $1 }' >> changes.csv
 ```
 
 I ran the script across four open source project repositories and took their
