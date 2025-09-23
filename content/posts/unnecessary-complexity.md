@@ -53,7 +53,7 @@ const MONTHS = Array.from({ length: 12 }, (_, index) => {
 })
 ```
 
-The original code and `null` as the first parameter passed to the
+The original code snippet has `null` as the first parameter passed to the
 `toLocaleDateString` instead of `undefined`, which will get the default
 language. This small difference leads to a runtime error. This same parameter
 will be another talking point for the 'flexibility critics'. Because you can
