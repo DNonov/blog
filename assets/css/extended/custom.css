@@ -144,9 +144,10 @@ span.katex-html {
 }
 
 p > code {
-    /* font-family: 'Inconsolata', sans-serif; */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-family: 'Inconsolata', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+    font-size: 2rem;
     color: #555;
 }
 
