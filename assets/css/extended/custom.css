@@ -9,7 +9,7 @@ main.main {
 }
 
 header.page-header > h1 {
-    color: #555;
+    color: #3d3d3d;
 }
 
 /* Post */
@@ -22,23 +22,23 @@ div.post-content>div.highlight {
     font-size: 2.5rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.1rem;
-    color: #555;
+    color: #3d3d3d;
 }
 
 header.post-header {
     margin-bottom: 80px
 }
 header.entry-header {
-    color: #555;
+    color: #3d3d3d;
 }
 ul.terms-tags > li > a {
-    color: #555;
+    color: #3d3d3d;
 }
 a.archive-header-link {
-    color: #555 !important;
+    color: #3d3d3d !important;
 }
 h3.archive-entry-title {
-    color: #555 !important;
+    color: #3d3d3d !important;
     font-size: 1.6rem;
 }
 .archive-meta {
@@ -89,14 +89,14 @@ header.entry-header>h2 {
     font-size: 1.8rem;
     word-spacing: 0.1rem;
     letter-spacing: 0.05rem;
-    color: #555;
+    color: #3d3d3d;
 }
 
 /* Navbar */
 
 div.logo > a {
     font-size: 3em;
-    color: #555;
+    color: #3d3d3d;
 }
 
 nav.nav {
@@ -106,7 +106,7 @@ nav.nav {
 ul#menu>li>a {
     font-size: 2rem;
     font-weight: 300;
-    color: #555;
+    color: #3d3d3d;
 }
 
 ul.post-tags>li>a {
@@ -134,7 +134,7 @@ a.footnote-ref {
 
 div.footnotes > ol > li > p > a {
     font-size: 1.3rem;
-    color: #555;
+    color: #3d3d3d;
 }
 
 
@@ -148,12 +148,12 @@ p > code {
     /* font-family: 'Roboto', sans-serif; */
     font-weight: 400;
     font-size: 2rem;
-    color: #555;
+    color: #3d3d3d;
 }
 
 /* Highlight */
 .post-content pre code {
-    color: #555;
+    color: #3d3d3d;
     background-color: #eee !important;
     font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
@@ -173,7 +173,7 @@ nav > a.prev, nav > a.next {
 .post-content {
     /* font-family: 'Inconsolata', sans-serif; */
     font-family: 'Roboto', sans-serif;
-    color: #555;
+    color: #3d3d3d;
     font-weight: 300;
     font-size: 1.5rem;
     line-height: 2.4rem;
