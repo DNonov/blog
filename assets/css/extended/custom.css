@@ -1,6 +1,7 @@
 main.main {
     width: 100% !important;
     position: relative;
+    font-family: 'Roboto', sans-serif;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: calc(var(--main-width) + var(--gap) * 15);
     margin: auto;
@@ -139,7 +140,7 @@ div.footnotes > ol > li > p > a {
 
 
 span.katex-html {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: #000;
 }
 
