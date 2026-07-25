@@ -40,12 +40,7 @@ the $ \frac{2^{24}}{10^{5}} = 167.77216$. Our approximation is $10^{2.2} =
 158.489319246$. It's pretty close, but the error is going to grow as the
 exponent of $2$ grows. We can reduce the error by using more digits of
 $\log_{10}(2)$ not just $0.3$ but this makes the calculation more complicated.
-
-The actual value is $167.77216$ and our aproximation is $10^{2.2} =
-158.489319246$. Not far off, right? But here comes the bad news. The error of
-our approximation is going to grow as the exponent of $2$ grows. We can reduce
-the error by using more digits of $\log_{10}(2)$, not just $0.3$, but this makes
-the calculation more complicated. It's a tradeoff between speed and accuracy.
+It's a tradeoff between speed and accuracy.
 
 {{< figure src="/images/Figure_1.png" alt="Description" align="center" >}}
 
