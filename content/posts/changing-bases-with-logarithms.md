@@ -16,7 +16,7 @@ and divide numbers in your head when the base is different. So what's the trick
 to do it easier? First we need to change one of the bases to the other. Powers
 of ten are easier to work in your head. We're going to use a trick with
 logarithms to simplify the calculation and change the base from two to ten.
-Let's try to change $2^{10}$.
+Let's try to change $2^{10}$ to base ten.
 
 $$ 2^{10} = 10^{x} $$
 $$ \log_{10}(2^{10}) = \log_{10}(10^{x}) $$
