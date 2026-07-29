@@ -10,7 +10,7 @@ doing them, but it feels so good to get some rough idea about the answer in a
 few seconds. One of the keys to being good at them is to know some tricks to
 simplify the unknown or difficult problem to some easier or familiar problem.
 
-In programming, software engineering and computer science, you very often need
+In programming, software engineering and computer science, very often you need
 to work with powers of two and powers of ten. It is very diffictul to multiply
 and divide numbers in your head when the base is different. So what's the trick
 to do it easier? First we need to change one of the bases to the other. Powers
