@@ -6,12 +6,12 @@ tags: ["Mathematics"]
 ---
 
 I'm a big fan of back-of-the-envelope calculations[^1]. I'm not very good at
-doing them, but it feels so good to get some rough idea about the answer in a
-few seconds. One of the keys to being good at them is to know some tricks to
-simplify the unknown or difficult problem to some easier or familiar problem.
+doing them, but it feels so nice when I succeed and get a rough idea in
+seconds. The secret to speed is to simplify a difficult or unknown problem
+to an easier or familiar one.
 
 In programming, software engineering and computer science, very often you need
-to work with powers of two and powers of ten. It is very diffictul to multiply
+to work with powers of two and powers of ten. It is very difficult to multiply
 and divide numbers in your head when the base is different. So what's the trick
 to do it easier? First we need to change one of the bases to the other. Powers
 of ten are easier to work in your head. We're going to use a trick with
