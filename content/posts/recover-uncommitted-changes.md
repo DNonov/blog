@@ -36,8 +36,8 @@ create a short bash script to help.
 
 
 ```bash
-touch /usr/local/bin/recover_changes
-chmod +x /usr/local/bin/recover_changes
+sudo touch /usr/local/bin/recover_changes
+sudo chmod +x /usr/local/bin/recover_changes
 ```
 
 Bear in mind we have to put the scrip in our `PATH` so it can be accessed, from
@@ -46,7 +46,7 @@ anywhere.
 ``` bash
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -eu
 
 function fail () {
     echo "FAIL: $*" >&2
@@ -70,11 +70,11 @@ function get_only_blobs() {
 }
 
 function get_hash_values() {
-    cut -d\  -f3
+    cut -d' '  -f3
 }
 
 function print_changes() {
-    while read change
+    while read -r change
         do printf "blob: $change\n"; git cat-file -p $change
         printf "\n----------------------------------------------------------\n"
     done
@@ -83,14 +83,14 @@ function print_changes() {
 get_all_unreachable \
     | get_only_blobs \
     | get_hash_values \
-    | print_diffs > recovered_changes.txt
+    | print_changes > recovered_changes.txt
 ```
 
 It's handy to have an alias in the `.gitconfig` file.
 
 ```bash
 [alias]
-  recover-ch = "!bash ~/bin/recover_changes"
+  recover-ch = "!recover_changes"
 ```
 
 We can execute the script and create a file `recovered_changes.txt`, which
