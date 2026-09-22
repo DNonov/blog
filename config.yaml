@@ -8,6 +8,9 @@ markup:
   highlight:
     guessSyntax: true
     style: modus-operandi
+  goldmark:
+    renderer:
+      unsafe: true
 
 params:
   env: production
